@@ -41,6 +41,7 @@ Skip only for pure stateless transformations with no dependencies.
 
 - Present changes as a diff with ±5 lines of context. Do not auto-apply.
 - Never scaffold or create new files unless explicitly instructed.
+- Before placing any file, read `architecture.md` Folder Structure.
 
 ## Security
 
