@@ -8,12 +8,13 @@ Drop the relevant files into your project and adapt to fit your conventions.
 
 ## What's in here
 
-Each stack folder contains up to three files:
+Each stack folder contains:
 
 | File                      | Tool           | Purpose                                            |
 | ------------------------- | -------------- | -------------------------------------------------- |
 | `AGENTS.md`               | Claude, Codex  | Agentic rules, STOP gates, architectural contracts |
 | `copilot-instructions.md` | GitHub Copilot | Inline generation: tests, JSDoc, DTOs              |
+| `architecture.md`         | Claude, Codex  | Architecture related context                       |
 
 ---
 
@@ -32,12 +33,22 @@ Each stack folder contains up to three files:
 
 ---
 
+## Stacks Supported
+
+- ReactJs
+- NextJs
+- NodeJs
+- NestJs
+
+---
+
 ## How to use
 
 1. Find the folder that matches your stack.
 2. Copy the files you need into your project root:
    - `AGENTS.md` → repo root
    - `copilot-instructions.md` → `.github/copilot-instructions.md`
+   - `architecture.md` → repo root/ docs
 3. Review every rule before committing. These are starting points, not drop-in defaults.
 4. `AI-TOOLS.md` → This is a guide to which AI tool to use
 
@@ -56,6 +67,6 @@ Each stack folder contains up to three files:
 Adding a new stack:
 
 1. Create a folder named after the stack.
-2. Include at minimum an `AGENTS.md`. Add `copilot-instructions.md` if the stack has clear inline generation conventions.
+2. Include at minimum an `AGENTS.md`, `architecture.md`. Add `copilot-instructions.md` if the stack has clear inline generation conventions.
 3. Keep rules grounded in the stack's actual defaults and tooling — avoid generic advice that applies everywhere.
 4. Open a PR with a one-line summary of what the stack covers and what's intentionally omitted.
